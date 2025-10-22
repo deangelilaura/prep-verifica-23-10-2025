@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-macchina',
@@ -7,4 +7,8 @@ import { Component, input, Input } from '@angular/core';
   styleUrl: './macchina.css'
 })
 export class Macchina {
+  pezzi: string[];
+  constructor() {
+    this.pezzi = ["viti", "bulloni", "ferro"]
+  }
 }
